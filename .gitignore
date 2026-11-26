@@ -1,0 +1,83 @@
+# ==============================================================
+# .gitignore: SQL Server Data Warehouse Project
+# ==============================================================
+
+# --------------------------------------------------------------
+# Operating system files
+# --------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# --------------------------------------------------------------
+# Editors and IDEs
+# --------------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# --------------------------------------------------------------
+# SQL Server / SSMS artefacts
+# --------------------------------------------------------------
+# Database files and backups (never commit these)
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.trn
+
+# SSMS auto-recovery, solution and user option files
+*.ssmssln
+*.ssmssqlproj
+*.suo
+*.user
+AutoRecover/
+
+# Query results exported while testing
+*.rpt
+*.rdl.data
+
+# --------------------------------------------------------------
+# draw.io backup and temporary files
+# (keep .drawio sources and exported .png / .jpg images)
+# --------------------------------------------------------------
+*.drawio.bkp
+*.dtmp
+.$*.bkp
+.$*.dtmp
+
+# --------------------------------------------------------------
+# Logs, temporary and scratch files
+# --------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+scratch/
+temp/
+tmp/
+
+# --------------------------------------------------------------
+# Environment and credentials (safety net)
+# --------------------------------------------------------------
+.env
+*.env
+secrets.*
+credentials.*
+
+# --------------------------------------------------------------
+# Source datasets
+# --------------------------------------------------------------
+# The CSV files are small and needed to reproduce the project,
+# so they are tracked by default.
+# To keep them out of the repository, uncomment the next line:
+# datasets/**/*.csv
+
+# --------------------------------------------------------------
+# Keep placeholder files that preserve empty folders
+# --------------------------------------------------------------
+!.gitkeep
