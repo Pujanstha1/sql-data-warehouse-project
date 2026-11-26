@@ -38,7 +38,7 @@ CREATE TABLE silver.crm_prd_info (
 -- TABLE 3: CRM SALES DETAILS
 -- =======================================================
 IF OBJECT_ID ('silver.crm_sales_details', 'U') IS NOT NULL
-	DROP TABLE silver.sales_details;
+	DROP TABLE silver.crm_sales_details;
 
 CREATE TABLE silver.sales_details (
 	sls_ord_num NVARCHAR(50),
@@ -62,7 +62,7 @@ IF OBJECT_ID ('silver.erp_cust_az12', 'U') IS NOT NULL
 
 CREATE TABLE silver.erp_cust_az12 (
 	CID	NVARCHAR(50),
-	BDATE DATETIME,
+	BDATE DATE,
 	GEN NVARCHAR(50),
 	dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
